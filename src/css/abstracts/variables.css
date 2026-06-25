@@ -1,0 +1,51 @@
+/* ============================================
+   ONTECH - Design Tokens / Variables
+   ============================================ */
+
+:root {
+  /* Colors */
+  --primary: #111111;
+  --accent: #fcd34d;
+  --accent-dark: #eab308;
+  --accent-light: #fef08a;
+  --bg: #faf7f2;
+  --bg-footer: #f4ede4;
+  --white: #ffffff;
+  --text: #111111;
+  --text-light: #555555;
+
+  /* Borders */
+  --border-color: #111111;
+  --border: 1.5px solid var(--border-color);
+  --border-thick: 2px solid var(--border-color);
+
+  /* Radius */
+  --radius: 16px;
+  --radius-sm: 8px;
+  --radius-xs: 4px;
+  --radius-pill: 50px;
+
+  /* Typography */
+  --font: 'Inter', sans-serif;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 6px 24px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.15);
+
+  /* Easing */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition: 0.3s var(--ease);
+
+  /* Layout */
+  --container-max: 1140px;
+  --container-padding: 20px;
+
+  /* Z-Index Scale */
+  --z-base: 1;
+  --z-header: 1000;
+  --z-dropdown: 1100;
+  --z-overlay: 9000;
+  --z-modal: 9999;
+}

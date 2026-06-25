@@ -1,0 +1,56 @@
+/* ============================================
+   COMPONENT: Badges
+   ============================================ */
+
+.badge {
+  position: absolute;
+  background-color: var(--accent);
+  color: var(--primary);
+  border: var(--border);
+  padding: 4px 10px;
+  border-radius: var(--radius-xs);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.badge--course {
+  top: 12px;
+  left: 12px;
+  animation: pulse-ring 2s infinite;
+}
+
+.badge--hero {
+  border: var(--border-thick);
+  padding: 10px 14px;
+  border-radius: 12px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 1);
+  animation: float-slow 4s ease-in-out infinite;
+}
+
+.badge--hero.bottom-left { animation-delay: 2s; }
+
+.badge__icon {
+  width: 24px;
+  height: 24px;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--primary);
+  flex-shrink: 0;
+}
+
+.badge__info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.badge__score { font-size: 13px; font-weight: 800; }
+.badge__text { font-size: 9px; font-weight: 600; }

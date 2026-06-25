@@ -1,0 +1,24 @@
+{
+  "name": "ontech",
+  "version": "1.0.0",
+  "description": "Ontech - Professional E-Learning Platform",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server . -p 3000 -c-1 -o /index.html",
+    "serve": "python -m http.server 3000",
+    "start": "node scripts/start.js"
+  },
+  "keywords": [
+    "e-learning",
+    "education",
+    "ontech",
+    "courses"
+  ],
+  "author": "Ontech",
+  "license": "MIT",
+  "dependencies": {
+    "chrome-launcher": "^1.2.1",
+    "lighthouse": "^13.4.0",
+    "playwright": "^1.61.1"
+  }
+}

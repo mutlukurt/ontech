@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description" content="Ontech - Learning skills for a better career. Online courses, live classes, and expert mentors.">
+  <meta name="keywords" content="online courses, e-learning, education, Ontech, skills, career, mentors">
+  <meta name="author" content="Ontech">
+  <meta name="theme-color" content="#fcd34d">
+  <meta property="og:title" content="Ontech - Learning Skills for a Better Career">
+  <meta property="og:description" content="Start your learning journey with Ontech today.">
+  <meta property="og:type" content="website">
+
+  <title>Ontech - Learning Skills for a Better Career</title>
+
+  <!-- Preload critical resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+  <link rel="preload" as="image" href="images/hero-student.webp" fetchpriority="high">
+
+  <!-- Critical inline CSS for above-the-fold -->
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    :root{--primary:#111;--accent:#fcd34d;--bg:#faf7f2;--white:#fff;--text:#111;--text-light:#555;--border-thick:2px solid #111;--radius:16px;--font:'Inter',sans-serif}
+    body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block;height:auto}
+    .container{max-width:1140px;margin:0 auto;padding:0 20px}
+    .header{background:var(--bg);padding:20px 0 10px;border-bottom:1px solid rgba(0,0,0,.05);position:sticky;top:0;z-index:1000}
+    .header__top{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px}
+    .logo{font-size:28px;font-weight:800;color:var(--primary)}
+    .hero{display:flex;align-items:center;gap:50px;padding:60px 0 40px}
+    .hero__content{flex:1.1}
+    .hero__title{font-size:clamp(2rem,5vw,3.5rem);font-weight:800;line-height:1.1;margin-bottom:24px}
+    .hero__text{font-size:clamp(.875rem,2vw,1rem);color:var(--text-light);margin-bottom:30px;max-width:480px}
+    .hero__image{flex:.9;display:flex;justify-content:flex-end}
+    .hero__image-wrapper{position:relative;width:320px;height:440px}
+    .hero__capsule-yellow{position:absolute;inset:0;background:var(--accent);border:var(--border-thick);border-radius:200px;top:15px;left:15px;z-index:1}
+    .hero__capsule-pink{position:absolute;inset:0;background:#fca5a5;border:var(--border-thick);border-radius:200px;z-index:2;overflow:hidden}
+    .hero__capsule-pink img{width:100%;height:100%;object-fit:cover;border-radius:200px}
+  </style>
+
+  <!-- Bundled & Minified CSS -->
+  <link rel="stylesheet" href="src/css/bundle.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__top">
+        <a href="#" class="logo" aria-label="Ontech Home">Ontech</a>
+        <div class="search-bar" role="search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" placeholder="Search any course" aria-label="Search courses">
+        </div>
+        <button class="btn btn--primary">Login</button>
+        <div class="menu-toggle" role="button" aria-label="Toggle menu" tabindex="0" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a href="#" class="nav__link active"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg> Categories</a>
+        <a href="#courses" class="nav__link">Courses</a>
+        <a href="#about" class="nav__link">About us</a>
+        <a href="#mentors" class="nav__link">Mentors</a>
+        <a href="#blog" class="nav__link">Blog</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero container" aria-label="Hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Learning skills<br>for a better career</h1>
+        <p class="hero__text">We believe the world is more beautiful as each person gets more skills and knows how to implement them in their daily work.</p>
+        <div class="hero__form">
+          <input type="email" class="form-input" placeholder="Enter your email" aria-label="Enter your email">
+          <button class="btn btn--primary btn--lg">14 Days Trial</button>
+        </div>
+        <p class="hero__rating"><span aria-hidden="true">&#9733;</span> 32K+ Review with 5star rating</p>
+      </div>
+      <div class="hero__image">
+        <div class="hero__image-wrapper">
+          <div class="hero__capsule-yellow" aria-hidden="true"></div>
+          <div class="hero__capsule-pink">
+            <img src="images/hero-student.webp" alt="Student learning with Ontech" loading="eager" width="320" height="440">
+          </div>
+          <div class="hero__sparkle hero__sparkle--top" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="3" x2="12" y2="21"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+          </div>
+          <div class="hero__sparkle hero__sparkle--bottom" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="3" x2="12" y2="21"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+          </div>
+          <div class="badge badge--hero hero__badge--top-right">
+            <div class="badge__icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="#111"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <div class="badge__info"><span class="badge__score">99.24%</span><span class="badge__text">32K+ Review with<br>5star rating</span></div>
+          </div>
+          <div class="badge badge--hero hero__badge--bottom-left">
+            <div class="badge__icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="#111"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <div class="badge__info"><span class="badge__score">99.24%</span><span class="badge__text">32K+ Review with<br>5star rating</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats container" aria-label="Statistics">
+      <div class="stat-item reveal-scale"><h3>12K+</h3><p>Fresh Graduates</p></div>
+      <div class="stat-item reveal-scale delay-1"><h3>9+</h3><p>Years of Experience</p></div>
+      <div class="stat-item reveal-scale delay-2"><h3>358+</h3><p>Excilence Awards</p></div>
+      <div class="stat-item reveal-scale delay-3"><h3>47+</h3><p>Brand Partners</p></div>
+    </section>
+
+    <!-- COURSES -->
+    <section class="courses-section container" id="courses" aria-label="Popular Courses">
+      <h2 class="section-title reveal">Popular Courses</h2>
+      <div class="courses-grid">
+        <article class="card card--hover-lift course-card reveal delay-1">
+          <div class="course-card__img">
+            <img src="images/course-marketing.webp" alt="Digital Marketing" loading="lazy" width="280" height="180">
+            <span class="badge badge--course">Best Seller</span>
+          </div>
+          <div class="course-card__body">
+            <h4 class="course-card__title">Digital Marketing &amp; with Basics to Advance</h4>
+            <p class="course-card__instructor">Clifford Lampe</p>
+            <div class="course-card__rating"><span class="score">5.0</span><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="count">(234,89)</span></div>
+            <div class="course-card__price"><span class="current">$19.60</span><span class="original">$26.37</span></div>
+          </div>
+        </article>
+        <article class="card card--hover-lift course-card reveal delay-2">
+          <div class="course-card__img">
+            <img src="images/course-design.webp" alt="Design Strategy" loading="lazy" width="280" height="180">
+          </div>
+          <div class="course-card__body">
+            <h4 class="course-card__title">Design-Led Strategy: Design thinking Process</h4>
+            <p class="course-card__instructor">Lila Hogan</p>
+            <div class="course-card__rating"><span class="score">4.8</span><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="count">(176,89)</span></div>
+            <div class="course-card__price"><span class="current">$15.33</span><span class="original">$20.77</span></div>
+          </div>
+        </article>
+        <article class="card card--hover-lift course-card reveal delay-3">
+          <div class="course-card__img">
+            <img src="images/course-html.webp" alt="HTML Programming" loading="lazy" width="280" height="180">
+          </div>
+          <div class="course-card__body">
+            <h4 class="course-card__title">HTML - Learn programimg language with basics</h4>
+            <p class="course-card__instructor">Mike Sheldon</p>
+            <div class="course-card__rating"><span class="score">4.9</span><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="count">(126,89)</span></div>
+            <div class="course-card__price"><span class="current">$13.76</span><span class="original">$18.87</span></div>
+          </div>
+        </article>
+        <article class="card card--hover-lift course-card reveal delay-4">
+          <div class="course-card__img">
+            <img src="images/course-ux.webp" alt="UX Design" loading="lazy" width="280" height="180">
+            <span class="badge badge--course">Best Seller</span>
+          </div>
+          <div class="course-card__body">
+            <h4 class="course-card__title">Foundations of (UX) Design Basics to Advance</h4>
+            <p class="course-card__instructor">M. Eric Knight</p>
+            <div class="course-card__rating"><span class="score">4.5</span><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="count">(176,89)</span></div>
+            <div class="course-card__price"><span class="current">$16.88</span><span class="original">$20.77</span></div>
+          </div>
+        </article>
+      </div>
+      <button class="btn btn--primary btn--block">View All</button>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="about" aria-label="Features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-item reveal-left">
+            <div class="feature-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <div><h4>World Best Instructors</h4><p>18,500 courses</p></div>
+          </div>
+          <div class="feature-item reveal-left delay-1">
+            <div class="feature-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
+            <div><h4>Live Class &amp; Video Courses</h4><p>492,000 Courses</p></div>
+          </div>
+          <div class="feature-item reveal-left delay-2">
+            <div class="feature-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div><h4>Over Active Students</h4><p>367,000 Students</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories-section container" aria-label="Top Categories">
+      <h2 class="section-title reveal">Top Categories</h2>
+      <div class="categories-grid">
+        <div class="category-card category-card--academic reveal delay-1" role="button" tabindex="0">
+          <h3>Academic</h3>
+          <div class="category-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+        </div>
+        <div class="category-card category-card--technical reveal delay-2" role="button" tabindex="0">
+          <h3>Technical</h3>
+          <div class="category-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+        </div>
+        <div class="category-card category-card--vocational reveal delay-3" role="button" tabindex="0">
+          <h3>Vocational</h3>
+          <div class="category-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        </div>
+        <div class="category-card category-card--others reveal delay-4" role="button" tabindex="0">
+          <h3>Others</h3>
+          <div class="category-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENTORS -->
+    <section class="mentors-section container" id="mentors" aria-label="Mentors">
+      <h2 class="section-title reveal">Meet Our Mentors</h2>
+      <div class="mentors-grid">
+        <article class="card card--hover-lift mentor-card reveal delay-1">
+          <div class="mentor-card__avatar"><img src="images/mentor-1.webp" alt="Ronald Richards" loading="lazy" width="90" height="90"></div>
+          <h4 class="mentor-card__name">Ronald Richards</h4>
+          <p class="mentor-card__subject">English</p>
+          <div class="mentor-card__rating"><span class="score">5.0</span><span class="star" aria-hidden="true">&#9733;</span><span class="count">(176,89)</span></div>
+        </article>
+        <article class="card card--hover-lift mentor-card reveal delay-2">
+          <div class="mentor-card__avatar"><img src="images/mentor-2.webp" alt="Theresa Webb" loading="lazy" width="90" height="90"></div>
+          <h4 class="mentor-card__name">Theresa Webb</h4>
+          <p class="mentor-card__subject">Web Development</p>
+          <div class="mentor-card__rating"><span class="score">4.9</span><span class="star" aria-hidden="true">&#9733;</span><span class="count">(176,89)</span></div>
+        </article>
+        <article class="card card--hover-lift mentor-card reveal delay-3">
+          <div class="mentor-card__avatar"><img src="images/mentor-3.webp" alt="Leslie Alexander" loading="lazy" width="90" height="90"></div>
+          <h4 class="mentor-card__name">Leslie Alexander</h4>
+          <p class="mentor-card__subject">Programming</p>
+          <div class="mentor-card__rating"><span class="score">4.8</span><span class="star" aria-hidden="true">&#9733;</span><span class="count">(176,89)</span></div>
+        </article>
+        <article class="card card--hover-lift mentor-card reveal delay-4">
+          <div class="mentor-card__avatar"><img src="images/mentor-4.webp" alt="Darrell Steward" loading="lazy" width="90" height="90"></div>
+          <h4 class="mentor-card__name">Darrell Steward</h4>
+          <p class="mentor-card__subject">Physics</p>
+          <div class="mentor-card__rating"><span class="score">5.0</span><span class="star" aria-hidden="true">&#9733;</span><span class="count">(176,89)</span></div>
+        </article>
+      </div>
+      <div class="carousel-nav">
+        <button class="carousel-btn" aria-label="Previous">&lsaquo;</button>
+        <button class="carousel-btn" aria-label="Next">&rsaquo;</button>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section container" aria-label="Testimonials">
+      <h2 class="section-title reveal">Testimonals</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal-left">
+          <div class="testimonial-avatar"><img src="images/testimonial-1.webp" alt="Winchester Rain" loading="lazy" width="56" height="56"></div>
+          <div class="testimonial-info"><h4>Winchester Rain</h4><p class="role">Academic Graduate</p><div class="t-rating"><span class="score">5</span><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div></div>
+          <div class="testimonial-sparkle" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg></div>
+          <div class="testimonial-divider"></div>
+          <div class="testimonial-content"><p>e-learning in this way is something that should have begun long ago. The concepts are nothing new because looking for more interactions.</p></div>
+        </div>
+        <div class="testimonial-card reveal-right">
+          <div class="testimonial-avatar"><img src="images/testimonial-2.webp" alt="Henrieta Sten" loading="lazy" width="56" height="56"></div>
+          <div class="testimonial-info"><h4>Henrieta Sten</h4><p class="role">Top Course Enroller</p><div class="t-rating"><span class="score">5</span><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div></div>
+          <div class="testimonial-sparkle" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg></div>
+          <div class="testimonial-divider"></div>
+          <div class="testimonial-content"><p>This course was very interesting &amp; thought provoking. I would certainly recommend for any teacher that is now trying to work with their students.</p></div>
+        </div>
+      </div>
+      <div class="testimonial-nav">
+        <button class="carousel-btn" aria-label="Previous">&lsaquo;</button>
+        <span class="page-info">2 of 1209</span>
+        <button class="carousel-btn" aria-label="Next">&rsaquo;</button>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="blog-section container" id="blog" aria-label="Blog">
+      <h2 class="section-title reveal">Read Our Daily Blogs</h2>
+      <div class="blog-grid">
+        <article class="card card--hover-lift blog-card reveal delay-1">
+          <div class="blog-card__img"><img src="images/blog-1.webp" alt="Blog post" loading="lazy" width="320" height="180"></div>
+          <div class="blog-card__body"><h4 class="blog-card__title">10 Realities you really want to reexamine before start profession</h4><div class="blog-card__meta"><span>06/10/2021</span><span>7min read</span></div></div>
+        </article>
+        <article class="card card--hover-lift blog-card reveal delay-2">
+          <div class="blog-card__img"><img src="images/blog-2.webp" alt="Blog post" loading="lazy" width="320" height="180"></div>
+          <div class="blog-card__body"><h4 class="blog-card__title">20 facts you need to reconsider before you start career</h4><div class="blog-card__meta"><span>12/05/2022</span><span>5min read</span></div></div>
+        </article>
+        <article class="card card--hover-lift blog-card reveal delay-3">
+          <div class="blog-card__img"><img src="images/blog-3.webp" alt="Blog post" loading="lazy" width="320" height="180"></div>
+          <div class="blog-card__body"><h4 class="blog-card__title">Discover career that matches your skills &amp; interests in job.</h4><div class="blog-card__meta"><span>11/06/2022</span><span>4min read</span></div></div>
+        </article>
+      </div>
+      <button class="btn btn--primary btn--block">Read More</button>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Ontech</h3>
+          <div class="contact-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +998 7364 5867</div>
+          <div class="contact-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> info@ontechclasses.com</div>
+          <div class="footer-social"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">yt</a><a href="#" aria-label="Twitter">tw</a></div>
+        </div>
+        <div class="footer-col"><h4>Menu</h4><ul><li><a href="#">Categories</a></li><li><a href="#">Courses</a></li><li><a href="#">Deals</a></li><li><a href="#">New</a></li><li><a href="#">Certificates</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="#">About us</a></li><li><a href="#">News</a></li><li><a href="#">Sell Courses</a></li><li><a href="#">Mentor</a></li><li><a href="#">Blog</a></li></ul></div>
+        <div class="footer-col"><h4>Support</h4><ul><li><a href="#">Security</a></li><li><a href="#">Terms &amp; Conditions</a></li><li><a href="#">Career</a></li><li><a href="#">Comments</a></li><li><a href="#">Community</a></li></ul></div>
+        <div class="footer-newsletter">
+          <h4>Subscribe to our<br>Newsletter</h4>
+          <div class="newsletter-form"><input type="email" placeholder="Enter your email" aria-label="Email"><button>Subscribe Now</button></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+  <!-- Modular JS Entry Point (ES Modules) -->
+  <script type="module" src="src/js/app.js"></script>
+</body>
+</html>

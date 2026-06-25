@@ -1,0 +1,36 @@
+/* ============================================
+   SECTION: Stats
+   ============================================ */
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  margin: 20px 0 60px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+  transition: transform var(--transition);
+}
+
+.stat-item:hover { transform: translateY(-5px); }
+
+.stat-item h3 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 2px;
+  letter-spacing: -1px;
+}
+
+.stat-item h3.animated { animation: count-bounce 0.5s var(--ease-bounce); }
+
+.stat-item p {
+  font-size: 13px;
+  color: var(--text-light);
+  font-weight: 600;
+}

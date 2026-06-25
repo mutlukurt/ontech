@@ -1,0 +1,48 @@
+/* ============================================
+   SECTION: Features
+   ============================================ */
+
+.features {
+  padding: 30px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 60px;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: transform var(--transition);
+}
+
+.feature-item:hover { transform: scale(1.05); }
+
+.feature-icon {
+  width: 44px;
+  height: 44px;
+  background-color: var(--accent);
+  border: var(--border-thick);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  flex-shrink: 0;
+  transition: transform 0.4s var(--ease-bounce);
+}
+
+.feature-item:hover .feature-icon { transform: rotate(360deg) scale(1.1); }
+
+.feature-item h4 { font-size: 14px; font-weight: 800; }
+.feature-item p { font-size: 12px; color: var(--text-light); font-weight: 600; }

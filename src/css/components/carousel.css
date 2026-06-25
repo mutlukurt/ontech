@@ -1,0 +1,47 @@
+/* ============================================
+   COMPONENT: Carousel
+   ============================================ */
+
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.carousel-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: var(--border-thick);
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition), background-color var(--transition), color var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-btn:hover {
+  transform: scale(1.15);
+  background-color: var(--accent);
+  color: var(--primary);
+}
+
+.carousel-btn:active { transform: scale(0.95); }
+
+.testimonial-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.testimonial-nav .page-info {
+  font-size: 13px;
+  font-weight: 700;
+  transition: opacity 0.2s var(--ease);
+}

@@ -1,0 +1,99 @@
+/* ============================================
+   COMPONENT: Forms
+   ============================================ */
+
+.form-input {
+  padding: 16px 24px;
+  border: 1px solid #dcd1c4;
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.form-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(252, 211, 77, 0.3);
+}
+
+.form-input::placeholder { color: #888888; }
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  border: var(--border);
+  border-radius: var(--radius-pill);
+  padding: 10px 24px;
+  width: 440px;
+  max-width: 45%;
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+
+.search-bar:focus-within {
+  box-shadow: 0 0 0 3px rgba(252, 211, 77, 0.3);
+  border-color: var(--primary);
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+  margin-left: 10px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.search-bar input::placeholder { color: #888888; }
+
+.search-bar svg {
+  color: var(--primary);
+  stroke-width: 2.5px;
+  transition: transform var(--transition);
+}
+
+.search-bar:focus-within svg { transform: scale(1.1); }
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  padding: 12px 20px;
+  border: var(--border);
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 500;
+  outline: none;
+  background-color: var(--white);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.newsletter-form input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(252, 211, 77, 0.3);
+}
+
+.newsletter-form button {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 12px 24px;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 700;
+  transition: transform var(--transition), background-color var(--transition), color var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.newsletter-form button:hover {
+  transform: translateY(-2px);
+  background-color: var(--accent);
+  color: var(--primary);
+}

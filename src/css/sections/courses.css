@@ -1,0 +1,12 @@
+/* ============================================
+   SECTION: Courses
+   ============================================ */
+
+.courses-section { padding: 40px 0 60px; }
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}

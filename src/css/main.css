@@ -1,0 +1,37 @@
+/* ============================================
+   ONTECH - Main Stylesheet
+   Entry point - imports all modules
+   ============================================ */
+
+/* Abstracts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import 'abstracts/variables.css';
+@import 'abstracts/animations.css';
+
+/* Base */
+@import 'base/reset.css';
+@import 'base/typography.css';
+
+/* Components */
+@import 'components/buttons.css';
+@import 'components/cards.css';
+@import 'components/badges.css';
+@import 'components/forms.css';
+@import 'components/navigation.css';
+@import 'components/carousel.css';
+
+/* Sections */
+@import 'sections/header.css';
+@import 'sections/hero.css';
+@import 'sections/stats.css';
+@import 'sections/courses.css';
+@import 'sections/features.css';
+@import 'sections/categories.css';
+@import 'sections/mentors.css';
+@import 'sections/testimonials.css';
+@import 'sections/blog.css';
+@import 'sections/footer.css';
+
+/* Utilities & Responsive */
+@import 'utilities.css';
+@import 'responsive.css';

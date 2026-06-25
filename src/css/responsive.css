@@ -1,0 +1,141 @@
+/* ============================================
+   ONTECH - Responsive Design
+   Breakpoints: 1024px (Tablet Landscape)
+                768px  (Tablet Portrait)
+                480px  (Mobile)
+   ============================================ */
+
+/* ===== Tablet Landscape ===== */
+@media (max-width: 1024px) {
+  .courses-grid { grid-template-columns: repeat(2, 1fr); }
+  .mentors-grid { grid-template-columns: repeat(2, 1fr); }
+  .categories-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+  .hero { gap: 30px; }
+  .hero__image-wrapper { width: 280px; height: 380px; }
+  .hero__badge--top-right { right: -30px; }
+  .hero__badge--bottom-left { left: -30px; }
+}
+
+/* ===== Tablet Portrait ===== */
+@media (max-width: 768px) {
+  .menu-toggle { display: flex; }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: var(--bg);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 30px 30px;
+    gap: 20px;
+    box-shadow: -4px 0 30px rgba(0, 0, 0, 0.1);
+    transition: right 0.4s var(--ease);
+    z-index: var(--z-header);
+  }
+
+  .nav.open { right: 0; }
+
+  .nav__link {
+    font-size: 16px;
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .search-bar { max-width: 100%; flex: 1; }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  .hero__text { margin: 0 auto 24px; }
+  .hero__form { justify-content: center; flex-wrap: wrap; }
+  .hero__rating { justify-content: center; }
+  .hero__image { justify-content: center; padding-right: 0; }
+
+  .stats { flex-wrap: wrap; gap: 20px; padding: 30px 0; }
+  .stat-item { flex: 1 1 45%; }
+
+  .courses-grid,
+  .categories-grid,
+  .mentors-grid,
+  .blog-grid { grid-template-columns: 1fr; }
+
+  .features-grid { flex-direction: column; gap: 20px; align-items: flex-start; }
+
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+
+  .hero__image-wrapper { width: 260px; height: 360px; }
+  .hero__badge--top-right { right: -10px; top: 100px; }
+  .hero__badge--bottom-left { left: -10px; bottom: 90px; }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+
+  .header__top { flex-wrap: wrap; gap: 12px; }
+  .search-bar { width: 100%; max-width: 100%; order: 3; }
+
+  .hero__title { font-size: 2rem; }
+  .hero__form { flex-direction: column; width: 100%; }
+  .hero__form .form-input { max-width: 100%; width: 100%; }
+  .hero__form .btn { width: 100%; }
+
+  .stats { gap: 15px; }
+  .stat-item { flex: 1 1 100%; }
+
+  .section-title { font-size: 1.5rem; margin-bottom: 30px; }
+
+  .testimonial-card { flex-direction: column; gap: 12px; }
+  .testimonial-divider { width: 100%; height: 1.5px; }
+
+  .hero__image-wrapper { width: 220px; height: 300px; }
+  .hero__badge { padding: 6px 10px; }
+  .hero__badge--top-right { right: 0; top: 80px; }
+  .hero__badge--bottom-left { left: 0; bottom: 70px; }
+  .hero__badge .badge__score { font-size: 11px; }
+  .hero__badge .badge__text { font-size: 8px; }
+
+  .back-to-top { width: 40px; height: 40px; bottom: 20px; right: 20px; font-size: 20px; }
+}
+
+/* ===== Reduced Motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .hero__image-wrapper,
+  .hero__badge,
+  .hero__sparkle,
+  .testimonial-sparkle,
+  .hero__rating span,
+  .badge--course { animation: none !important; }
+
+  .reveal, .reveal-left, .reveal-right, .reveal-scale {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ===== Print ===== */
+@media print {
+  .header, .footer, .back-to-top,
+  .carousel-nav, .testimonial-nav, .btn--block,
+  .menu-toggle { display: none !important; }
+
+  body { background: white; color: black; }
+  * { box-shadow: none !important; }
+}
