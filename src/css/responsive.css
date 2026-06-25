@@ -7,24 +7,24 @@
      640px   (Large Mobile)
      480px   (Mobile)
      360px   (Small Mobile)
+
+   NOTE: Hero badge positioning is in hero.css
    ============================================ */
 
 /* ===== Large Desktop ===== */
 @media (max-width: 1280px) {
   .hero { gap: 40px; }
   .hero__image-wrapper { width: 300px; height: 420px; }
-  .hero__badge--top-right { right: -45px; }
-  .hero__badge--bottom-left { left: -45px; }
+  .hero__sparkle--top { right: -30px; }
+  .hero__sparkle--bottom { left: -25px; }
 }
 
 /* ===== Tablet Landscape ===== */
 @media (max-width: 1024px) {
   .hero { gap: 30px; padding: 40px 0 30px; }
   .hero__image-wrapper { width: 280px; height: 380px; }
-  .hero__badge--top-right { right: -55px; }
-  .hero__badge--bottom-left { left: -55px; }
-  .hero__sparkle--top { right: -30px; }
-  .hero__sparkle--bottom { left: -25px; }
+  .hero__sparkle--top { right: -35px; }
+  .hero__sparkle--bottom { left: -30px; }
 
   .courses-grid { grid-template-columns: repeat(2, 1fr); }
   .mentors-grid { grid-template-columns: repeat(2, 1fr); }
@@ -68,7 +68,6 @@
 
   .search-bar { max-width: 100%; flex: 1; }
 
-  /* Hero stacks vertically */
   .hero {
     flex-direction: column;
     text-align: center;
@@ -84,10 +83,7 @@
   .hero__rating { justify-content: center; }
   .hero__image { justify-content: center; padding-right: 0; flex: none; }
 
-  /* Hero capsule smaller + badges pushed outward */
   .hero__image-wrapper { width: 260px; height: 360px; }
-  .hero__badge--top-right { right: -65px; top: 90px; }
-  .hero__badge--bottom-left { left: -65px; bottom: 80px; }
   .hero__sparkle--top { top: -15px; right: -35px; }
   .hero__sparkle--bottom { bottom: -10px; left: -30px; }
 
@@ -121,10 +117,7 @@
   .hero__form .form-input { max-width: 100%; width: 100%; }
   .hero__form .btn { width: 100%; }
 
-  /* Hero capsule smaller, badges pushed further out */
   .hero__image-wrapper { width: 220px; height: 310px; }
-  .hero__badge--top-right { right: -50px; top: 70px; }
-  .hero__badge--bottom-left { left: -50px; bottom: 60px; }
   .hero__badge { padding: 6px 10px; }
   .hero__badge .badge__score { font-size: 11px; }
   .hero__badge .badge__text { font-size: 7px; }
@@ -152,8 +145,6 @@
 @media (max-width: 480px) {
   .hero__title { font-size: 1.6rem; }
   .hero__image-wrapper { width: 200px; height: 280px; }
-  .hero__badge--top-right { right: -40px; top: 60px; }
-  .hero__badge--bottom-left { left: -40px; bottom: 55px; }
   .hero__badge { padding: 5px 8px; gap: 6px; }
   .hero__badge .badge__score { font-size: 10px; }
   .hero__badge .badge__text { font-size: 6px; }
@@ -185,8 +176,6 @@
 
   .hero__title { font-size: 1.4rem; }
   .hero__image-wrapper { width: 180px; height: 250px; }
-  .hero__badge--top-right { right: -30px; top: 50px; }
-  .hero__badge--bottom-left { left: -30px; bottom: 50px; }
   .hero__badge { padding: 4px 7px; gap: 5px; }
   .hero__badge .badge__score { font-size: 9px; }
   .hero__badge .badge__text { font-size: 5px; }

@@ -125,3 +125,36 @@
 
 .hero__sparkle--top { top: -20px; right: -20px; }
 .hero__sparkle--bottom { bottom: -15px; left: -15px; animation-delay: 1.5s; }
+
+/* ===== Hero Responsive Badge Positioning ===== */
+/* Badges pushed fully outside capsule on smaller screens */
+
+@media (max-width: 1280px) {
+  .hero__badge--top-right { right: -60px; }
+  .hero__badge--bottom-left { left: -60px; }
+}
+
+@media (max-width: 1024px) {
+  .hero__badge--top-right { right: -70px; top: 110px; }
+  .hero__badge--bottom-left { left: -70px; bottom: 90px; }
+}
+
+@media (max-width: 768px) {
+  .hero__badge--top-right { right: -80px; top: 80px; }
+  .hero__badge--bottom-left { left: -80px; bottom: 70px; }
+}
+
+@media (max-width: 640px) {
+  .hero__badge--top-right { right: -55px; top: 60px; }
+  .hero__badge--bottom-left { left: -55px; bottom: 55px; }
+}
+
+@media (max-width: 480px) {
+  .hero__badge--top-right { right: -45px; top: 50px; }
+  .hero__badge--bottom-left { left: -45px; bottom: 50px; }
+}
+
+@media (max-width: 360px) {
+  .hero__badge--top-right { right: -35px; top: 40px; }
+  .hero__badge--bottom-left { left: -35px; bottom: 45px; }
+}

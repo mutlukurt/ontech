@@ -61,6 +61,14 @@
   overflow: hidden;
 }
 
+.course-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
 .course-card__body {
   padding: 20px;
   display: flex;
@@ -190,6 +198,14 @@
   height: 180px;
   border-bottom: var(--border-thick);
   overflow: hidden;
+}
+
+.blog-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .blog-card__body { padding: 20px; }
