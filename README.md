@@ -1,5 +1,35 @@
 # Ontech — E-Learning Platform
 
+<p align="center">
+  <a href="https://ontech-zeta.vercel.app"><strong>Live Demo</strong></a>
+  &nbsp;·&nbsp;
+  <a href="#getting-started">Getting Started</a>
+  &nbsp;·&nbsp;
+  <a href="#lighthouse-scores">Lighthouse Scores</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Live-ontech--zeta.vercel.app-black?style=flat-square&logo=vercel" alt="Vercel Deployment">
+  <img src="https://img.shields.io/badge/Lighthouse_Mobile-95+-success?style=flat-square&logo=googlechrome" alt="Lighthouse Mobile">
+  <img src="https://img.shields.io/badge/Lighthouse_Desktop-100-success?style=flat-square&logo=googlechrome" alt="Lighthouse Desktop">
+  <img src="https://img.shields.io/badge/Performance-95+-brightgreen?style=flat-square" alt="Performance">
+  <img src="https://img.shields.io/badge/Accessibility-99-brightgreen?style=flat-square" alt="Accessibility">
+  <img src="https://img.shields.io/badge/SEO-100-brightgreen?style=flat-square" alt="SEO">
+</p>
+
+<p align="center">
+  <a href="https://ontech-zeta.vercel.app">
+    <img src="images/hero-student.webp" width="200" alt="Ontech Hero">
+  </a>
+</p>
+
+---
+
+> **Live Site:** https://ontech-zeta.vercel.app  
+> **Repository:** https://github.com/mutlukurt/ontech
+
+---
+
 A high-performance, component-based e-learning landing page built with vanilla web technologies. Features a modular CSS architecture (7-1 pattern), ES6 class-based JavaScript modules, AI-generated photorealistic imagery, and Lighthouse-optimized performance scoring 95+ on both mobile and desktop.
 
 ---
