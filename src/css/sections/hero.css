@@ -127,32 +127,33 @@
 .hero__sparkle--bottom { bottom: -15px; left: -15px; animation-delay: 1.5s; }
 
 /* ===== Hero Responsive Badge Positioning ===== */
-/* Badges positioned outside capsule, scaled down on mobile/tablet */
+/* Badges positioned at sides, vertically centered, outside capsule */
+
+.hero__badge {
+  transform: translateY(-50%);
+}
+
+.hero__badge--top-right { 
+  top: 40%; 
+  right: -140px; 
+}
+
+.hero__badge--bottom-left { 
+  top: 60%; 
+  left: -140px; 
+}
 
 @media (max-width: 1280px) {
-  .hero__badge--top-right { right: -70px; }
-  .hero__badge--bottom-left { left: -70px; }
+  .hero__badge--top-right { right: -130px; }
+  .hero__badge--bottom-left { left: -130px; }
 }
 
 @media (max-width: 1024px) {
-  .hero__badge--top-right { right: -85px; top: 100px; }
-  .hero__badge--bottom-left { left: -85px; bottom: 85px; }
+  .hero__badge--top-right { right: -120px; }
+  .hero__badge--bottom-left { left: -120px; }
 }
 
 @media (max-width: 768px) {
-  .hero__badge { 
-    padding: 8px 12px; 
-    gap: 6px;
-  }
-  .hero__badge .badge__score { font-size: 12px; }
-  .hero__badge .badge__text { font-size: 8px; }
-  .hero__badge .badge__icon { width: 22px; height: 22px; }
-  .hero__badge .badge__icon svg { width: 12px; height: 12px; }
-  .hero__badge--top-right { right: -90px; top: 70px; }
-  .hero__badge--bottom-left { left: -90px; bottom: 65px; }
-}
-
-@media (max-width: 640px) {
   .hero__badge { 
     padding: 6px 10px; 
     gap: 5px;
@@ -161,11 +162,11 @@
   .hero__badge .badge__text { font-size: 7px; }
   .hero__badge .badge__icon { width: 20px; height: 20px; }
   .hero__badge .badge__icon svg { width: 11px; height: 11px; }
-  .hero__badge--top-right { right: -65px; top: 55px; }
-  .hero__badge--bottom-left { left: -65px; bottom: 50px; }
+  .hero__badge--top-right { right: -110px; }
+  .hero__badge--bottom-left { left: -110px; }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .hero__badge { 
     padding: 5px 8px; 
     gap: 4px;
@@ -174,19 +175,32 @@
   .hero__badge .badge__text { font-size: 6px; }
   .hero__badge .badge__icon { width: 18px; height: 18px; }
   .hero__badge .badge__icon svg { width: 10px; height: 10px; }
-  .hero__badge--top-right { right: -50px; top: 45px; }
-  .hero__badge--bottom-left { left: -50px; bottom: 45px; }
+  .hero__badge--top-right { right: -100px; }
+  .hero__badge--bottom-left { left: -100px; }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .hero__badge { 
-    padding: 4px 6px; 
+    padding: 4px 7px; 
     gap: 3px;
   }
   .hero__badge .badge__score { font-size: 9px; }
   .hero__badge .badge__text { font-size: 5px; }
   .hero__badge .badge__icon { width: 16px; height: 16px; }
   .hero__badge .badge__icon svg { width: 9px; height: 9px; }
-  .hero__badge--top-right { right: -40px; top: 35px; }
-  .hero__badge--bottom-left { left: -40px; bottom: 40px; }
+  .hero__badge--top-right { right: -90px; }
+  .hero__badge--bottom-left { left: -90px; }
+}
+
+@media (max-width: 360px) {
+  .hero__badge { 
+    padding: 3px 6px; 
+    gap: 3px;
+  }
+  .hero__badge .badge__score { font-size: 8px; }
+  .hero__badge .badge__text { font-size: 5px; }
+  .hero__badge .badge__icon { width: 14px; height: 14px; }
+  .hero__badge .badge__icon svg { width: 8px; height: 8px; }
+  .hero__badge--top-right { right: -80px; }
+  .hero__badge--bottom-left { left: -80px; }
 }
