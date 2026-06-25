@@ -2,7 +2,7 @@
    SECTION: Categories
    ============================================ */
 
-.categories-section { padding: 40px 0 80px; }
+.categories-section { padding: 40px 0 100px; margin-bottom: 40px; }
 
 .categories-grid {
   display: grid;
