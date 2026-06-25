@@ -7,14 +7,14 @@
      640px   (Large Mobile)
      480px   (Mobile)
      360px   (Small Mobile)
-
-   NOTE: Hero badge positioning is in hero.css
    ============================================ */
 
 /* ===== Large Desktop ===== */
 @media (max-width: 1280px) {
   .hero { gap: 40px; }
   .hero__image-wrapper { width: 300px; height: 420px; }
+  .hero__badge--top-right { right: -140px; }
+  .hero__badge--bottom-left { left: -140px; }
   .hero__sparkle--top { right: -30px; }
   .hero__sparkle--bottom { left: -25px; }
 }
@@ -23,6 +23,8 @@
 @media (max-width: 1024px) {
   .hero { gap: 30px; padding: 40px 0 30px; }
   .hero__image-wrapper { width: 280px; height: 380px; }
+  .hero__badge--top-right { right: -130px; }
+  .hero__badge--bottom-left { left: -130px; }
   .hero__sparkle--top { right: -35px; }
   .hero__sparkle--bottom { left: -30px; }
 
@@ -34,7 +36,17 @@
 
 /* ===== Tablet Portrait ===== */
 @media (max-width: 768px) {
+  /* --- Header: logo + hamburger right, login stays right of logo --- */
   .menu-toggle { display: flex; }
+  .search-bar { display: none; }
+
+  .header__top {
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .header__top .logo { flex: 1; }
+  .header__top .btn { flex-shrink: 0; }
 
   .nav {
     position: fixed;
@@ -66,8 +78,7 @@
     padding: 12px 0;
   }
 
-  .search-bar { max-width: 100%; flex: 1; }
-
+  /* --- Hero: stack vertically, badges pushed further out --- */
   .hero {
     flex-direction: column;
     text-align: center;
@@ -84,6 +95,16 @@
   .hero__image { justify-content: center; padding-right: 0; flex: none; }
 
   .hero__image-wrapper { width: 260px; height: 360px; }
+  .hero__badge {
+    padding: 6px 10px;
+    gap: 5px;
+  }
+  .hero__badge .badge__score { font-size: 11px; }
+  .hero__badge .badge__text { font-size: 7px; }
+  .hero__badge .badge__icon { width: 20px; height: 20px; }
+  .hero__badge .badge__icon svg { width: 11px; height: 11px; }
+  .hero__badge--top-right { right: -120px; top: 40%; }
+  .hero__badge--bottom-left { left: -120px; top: 60%; }
   .hero__sparkle--top { top: -15px; right: -35px; }
   .hero__sparkle--bottom { bottom: -10px; left: -30px; }
 
@@ -107,8 +128,9 @@
 @media (max-width: 640px) {
   .container { padding: 0 16px; }
 
-  .header__top { flex-wrap: wrap; gap: 10px; }
-  .search-bar { width: 100%; max-width: 100%; order: 3; }
+  .header__top { gap: 10px; }
+  .header__top .logo { font-size: 24px; }
+  .header__top .btn { padding: 8px 20px; font-size: 13px; }
 
   .hero { gap: 30px; padding: 20px 0 10px; }
   .hero__title { font-size: clamp(1.6rem, 7vw, 2.2rem); margin-bottom: 16px; }
@@ -118,6 +140,16 @@
   .hero__form .btn { width: 100%; }
 
   .hero__image-wrapper { width: 220px; height: 310px; }
+  .hero__badge {
+    padding: 5px 8px;
+    gap: 4px;
+  }
+  .hero__badge .badge__score { font-size: 10px; }
+  .hero__badge .badge__text { font-size: 6px; }
+  .hero__badge .badge__icon { width: 18px; height: 18px; }
+  .hero__badge .badge__icon svg { width: 10px; height: 10px; }
+  .hero__badge--top-right { right: -100px; top: 38%; }
+  .hero__badge--bottom-left { left: -100px; top: 62%; }
   .hero__sparkle--top { top: -10px; right: -25px; }
   .hero__sparkle--bottom { bottom: -5px; left: -22px; }
   .hero__sparkle svg { width: 28px; height: 28px; }
@@ -140,6 +172,16 @@
 @media (max-width: 480px) {
   .hero__title { font-size: 1.6rem; }
   .hero__image-wrapper { width: 200px; height: 280px; }
+  .hero__badge {
+    padding: 4px 7px;
+    gap: 3px;
+  }
+  .hero__badge .badge__score { font-size: 9px; }
+  .hero__badge .badge__text { font-size: 5px; }
+  .hero__badge .badge__icon { width: 16px; height: 16px; }
+  .hero__badge .badge__icon svg { width: 9px; height: 9px; }
+  .hero__badge--top-right { right: -85px; top: 35%; }
+  .hero__badge--bottom-left { left: -85px; top: 65%; }
   .hero__sparkle svg { width: 24px; height: 24px; }
   .hero__sparkle--top { top: -8px; right: -20px; }
   .hero__sparkle--bottom { bottom: -5px; left: -18px; }
@@ -164,17 +206,27 @@
 @media (max-width: 360px) {
   .container { padding: 0 12px; }
 
+  .header__top .logo { font-size: 20px; }
+  .header__top .btn { padding: 7px 16px; font-size: 12px; }
+
   .hero__title { font-size: 1.4rem; }
   .hero__image-wrapper { width: 180px; height: 250px; }
+  .hero__badge {
+    padding: 3px 6px;
+    gap: 3px;
+  }
+  .hero__badge .badge__score { font-size: 8px; }
+  .hero__badge .badge__text { font-size: 5px; }
+  .hero__badge .badge__icon { width: 14px; height: 14px; }
+  .hero__badge .badge__icon svg { width: 8px; height: 8px; }
+  .hero__badge--top-right { right: -70px; top: 35%; }
+  .hero__badge--bottom-left { left: -70px; top: 65%; }
   .hero__sparkle svg { width: 20px; height: 20px; }
   .hero__sparkle--top { top: -5px; right: -15px; }
   .hero__sparkle--bottom { bottom: -3px; left: -14px; }
 
   .stat-item h3 { font-size: 1.4rem; }
   .section-title { font-size: 1.2rem; }
-
-  .logo { font-size: 22px; }
-  .btn-login { padding: 10px 20px; font-size: 12px; }
 }
 
 /* ===== Reduced Motion ===== */
